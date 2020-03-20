@@ -19,21 +19,27 @@ namespace ASPMINE.Controllers
         [HttpPost]
         public ActionResult Index(String s)
         {
+
             String password = Request.Form["passet"];
             String username = Request.Form["emailet"];
             projet1aspEntities  dbd = new projet1aspEntities();
-            var p = dbd.etudiants.SingleOrDefault(x => x.Nom.Equals(username) && x.password.Equals(password));
-         //   var prof=dbd.etudiants.SingleOrDefault
-            if (p != null)
+            var etud = dbd.etudiants.SingleOrDefault(x => x.Nom.Equals(username) && x.password.Equals(password));
+            String passwordp = Request.Form["passp"];
+            String emailp = Request.Form["emailp"];
+            var prof = dbd.professeurs.SingleOrDefault(x => x.Nom.Equals(emailp) && x.password.Equals(passwordp));
+       
+            if (etud != null)
             {
-                etudiant e = (etudiant)p;
+                etudiant e = (etudiant)etud;
                 return View("etudiant", e);
             }
-            else
+           else if (prof != null)
             {
-                return View();
+                professeur e = (professeur)prof;
+                return View("professeur", e);
             }
 
+            return View();
         }
         public ActionResult etudiant()
         {
@@ -66,6 +72,18 @@ namespace ASPMINE.Controllers
             return View();
         }
         public ActionResult professeur()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult inscriptionp()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult inscriptione()
         {
             ViewBag.Message = "Your contact page.";
 

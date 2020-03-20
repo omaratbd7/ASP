@@ -168,6 +168,7 @@
     <Content Include="Content\img\apple-touch-icon.png" />
     <Content Include="Content\img\ENSA.jpg" />
     <Content Include="Content\img\favicon.png" />
+    <Content Include="Content\img\slide\heroet.jpg" />
     <Content Include="Content\img\logoensa.png" />
     <Content Include="Content\img\portfolio\portfolio-1.jpg" />
     <Content Include="Content\img\portfolio\portfolio-2.jpg" />
@@ -208,6 +209,20 @@
     <Content Include="Content\vendor\boxicons\css\boxicons.min.css" />
     <Content Include="Content\vendor\boxicons\css\transformations.css" />
     <Content Include="Content\vendor\counterup\counterup.min.js" />
+    <Content Include="Content\vendor\fontawesome-free\css\all.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\brands.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\brands.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\fontawesome.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\regular.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\regular.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\solid.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\solid.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\v4-shims.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\v4-shims.min.css" />
     <Content Include="Content\vendor\icofont\icofont.min.css" />
     <Content Include="Content\vendor\isotope-layout\isotope.pkgd.js" />
     <Content Include="Content\vendor\isotope-layout\isotope.pkgd.min.js" />
@@ -259,6 +274,31 @@
     <Content Include="Models\projet.edmx.diagram">
       <DependentUpon>projet.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\scss\base\_page.scss" />
+    <Content Include="Content\scss\base\_variables.scss" />
+    <Content Include="Content\scss\components\_buttons.scss" />
+    <Content Include="Content\scss\components\_divider.scss" />
+    <Content Include="Content\scss\freelancer.scss" />
+    <Content Include="Content\scss\layout\_contact.scss" />
+    <Content Include="Content\scss\layout\_footer.scss" />
+    <Content Include="Content\scss\layout\_masthead.scss" />
+    <Content Include="Content\scss\layout\_navbar.scss" />
+    <Content Include="Content\scss\layout\_portfolio.scss" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -286,8 +326,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_MonLayout.cshtml" />
     <Content Include="Views\Home\etudiant.cshtml" />
-    <Content Include="Views\Shared\privateL.cshtml" />
+    <Content Include="Views\Shared\privateetudiant.cshtml" />
     <Content Include="Views\Home\professeur.cshtml" />
+    <Content Include="Views\Shared\privateprofesseur.cshtml" />
+    <Content Include="Views\Shared\inscription.cshtml" />
+    <Content Include="Views\Home\inscriptionp.cshtml" />
+    <Content Include="Views\Home\inscriptione.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\uploads\" />
